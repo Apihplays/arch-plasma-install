@@ -280,6 +280,11 @@ pacman -S grub
 ```
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 ```
+#### For UEFI dualboot with Windows11
+```
+nano /etc/default/grub.config
+uncomment GRUB_DISABLE_OS_PROBER=false
+```
 
 #### For MBR System
 ```
